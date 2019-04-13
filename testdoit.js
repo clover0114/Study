@@ -8,11 +8,11 @@ $('#input').click(function () {
 // ですので、スクロール時に高さを変数に入れています
 var _window = $(window),
     _header = $('.header'),
-    heroBottom;
+    empty;
 
 _window.on('scroll', function () {
-    heroBottom = $('.heroBottom').height();
-    if (_window.scrollTop() > heroBottom) {
+    empty = $('.empty').height();
+    if (_window.scrollTop() > empty) {
         _header.addClass('transform');
     } else {
         _header.removeClass('transform');
