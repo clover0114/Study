@@ -1,0 +1,54 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>jQuery UI でカレンダーを簡単に利用する</title> 
+<link rel="stylesheet" href="../../_shared/css/reset.css"> 
+<link rel="stylesheet" href="../../_shared/css/base.css">
+
+<link rel="stylesheet" href="jqueryui/css/custom-theme/jquery-ui-1.8.16.custom.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style type="text/css">
+.ui-datepicker-trigger {
+	margin-left: 10px;
+}
+</style>
+
+</head> 
+<body>
+
+<header>
+<div class="inner">
+<h1><span>datepicker</span>jQuery UI でカレンダーを簡単に利用する</h1>
+</div>
+<!-- header --></header>
+
+<div id="contents">
+<div class="inner">
+
+<p>ご予約日: <input type="text" id="datepicker"></p>
+
+</div>
+</div>
+<!-- inner --></div>
+<!-- contents --></div>
+
+<footer>
+<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+<!-- footer --></footer>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="jqueryui/js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="jqueryui/js/jquery.ui.datepicker-ja.js"></script>
+<script type="text/javascript">
+$( "#datepicker" ).datepicker({
+	showOn: "button",
+	buttonImage: "images/calendar.gif"
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>フォームの入力チェックをする</title> 
+<link rel="stylesheet" href="../../_shared/css/reset.css"> 
+<link rel="stylesheet" href="../../_shared/css/base.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style type="text/css">
+input.error {
+	background-color: #fcc;
+}
+p.error {
+	color: #f00;
+	margin-top: 5px;
+}
+.require {
+	background-color: #ab000e;
+	color: #fff;
+	padding: 1px;
+	font-size: 80%;
+	margin-left: 5px;
+}
+</style>
+</head> 
+<body>
+
+<header>
+<div class="inner">
+<h1><span>append, parent, remove, addClass, removeClass</span>フォームの入力チェックをする</h1>
+</div>
+<!-- header --></header>
+
+<div id="contents">
+<div class="inner">
+
+<form action="" method="post">
+<dl>
+<dt>お名前<span class="require">必須</span></dt>
+<dd><input name="myname" type="text" size="35" value="山田太郎"></dd>
+</dl>
+</form>
+
+</div>
+</div>
+<!-- inner --></div>
+<!-- contents --></div>
+
+<footer>
+<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+<!-- footer --></footer>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+console.log($('input[name=myname]').val());
+</script>
+</body>
+</html>

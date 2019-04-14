@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>H2O Space. - エイチツーオー・スペース &#124; ちゃんとWeb</title>
+	<atom:link href="http://h2o-space.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://h2o-space.com</link>
+	<description>東京都世田谷区のWeb制作会社です。「ちゃんとWeb」をテーマに、Webにまっすぐ向きあっています。</description>
+	<lastBuildDate>Tue, 13 Dec 2011 05:01:01 +0000</lastBuildDate>
+	<language>ja</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.2.1</generator>
+		<item>
+		<title>【12/19】ロクナナワークショップ主催『集中特訓！スマートフォンサイト制作術』に出演いたします</title>
+		<link>http://h2o-space.com/news/152/</link>
+		<comments>http://h2o-space.com/news/152/#comments</comments>
+		<pubDate>Tue, 13 Dec 2011 05:01:01 +0000</pubDate>
+		<dc:creator>h2ospace</dc:creator>
+				<category><![CDATA[ニュース]]></category>
+
+		<guid isPermaLink="false">http://h2o-space.com/?p=152</guid>
+		<description><![CDATA[2011年 12月 19日に開催される、ロクナナワークショップ主催『集中特訓！スマートフォンサイト制作術』に、出演させていただきます。 スマートフォン向けの Webサービスを開発するのに欠かせないのが、PHPなどの「サー [...]]]></description>
+			<content:encoded><![CDATA[<p>2011年 12月 19日に開催される、ロクナナワークショップ主催『集中特訓！スマートフォンサイト制作術』に、出演させていただきます。</p>
+<p>スマートフォン向けの Webサービスを開発するのに欠かせないのが、PHPなどの「サーバーサイドスクリプト」。なかでも、CakePHPというフレームワークは、本格的なフレームワークであるにもかかわらず、非常に取っつきやすく、学習しやすいのが特徴です。</p>
+<p>本セッションでは、CakePHPが採用している「MVCモデル」というプログラム開発のスタイルの紹介や、CakePHPでのデータベースプログラムの作成方法などを通じ、jQuery Mobileと組み合わせたスマートフォンサイトの制作の流れをご紹介していきます。</p>
+<p>すでに満席を超えていて、少し増席などもあるようですが、ご興味がありましたらご参加ください。</p>
+<ul>
+<li><a href="http://67.org/ws/news/20111119_01.html">【イベント】集中特訓！スマートフォンサイト制作術 | ロクナナワークショップ</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://h2o-space.com/news/152/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>【11/27】WordCamp Tokyo 2011に出演いたします</title>
+		<link>http://h2o-space.com/news/135/</link>
+		<comments>http://h2o-space.com/news/135/#comments</comments>
+		<pubDate>Mon, 31 Oct 2011 17:30:31 +0000</pubDate>
+		<dc:creator>h2ospace</dc:creator>
+				<category><![CDATA[ニュース]]></category>
+
+		<guid isPermaLink="false">http://h2o-space.com/?p=135</guid>
+		<description><![CDATA[2011年 11月 27日に品川シーサイドの楽天タワー2号館で開催される「WordCamp Tokyo 2011」に、たにぐち まことが出演いたします。 デザイントラックにて「実践！オリジナルテーマで作る、スマホサイト＆ [...]]]></description>
+			<content:encoded><![CDATA[<p><img src="http://h2o-space.com/wp-content/uploads/2011/11/2011-11-01_02-29-44-300x94.png" alt="" title="WordCamp Tokyo 2011" width="300" height="94" class="alignleft size-medium wp-image-136" /></p>
+<p>2011年 11月 27日に品川シーサイドの楽天タワー2号館で開催される「WordCamp Tokyo 2011」に、たにぐち まことが出演いたします。</p>
+<p>デザイントラックにて「実践！オリジナルテーマで作る、スマホサイト＆マルチスクリーンサイト」というテーマで、WordPressでスマホサイトを作るときのテクニックなどを中心にお届けする予定です。</p>
+<p>その他にも、WordPressに絡んだセッションが多数準備されています。参加費用は無料なので、ご興味がある方は是非ともお気軽にご参加いただけると幸いです。</p>
+<ul>
+<li><a href="http://2011.tokyo.wordcamp.org/">WordCamp Tokyo 2011 | 2011年11月27日(日) 品川シーサイド 楽天タワー2号館</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://h2o-space.com/news/135/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>『よくわかるPHPの教科書』が2万部を突破しました</title>
+		<link>http://h2o-space.com/news/133/</link>
+		<comments>http://h2o-space.com/news/133/#comments</comments>
+		<pubDate>Mon, 17 Oct 2011 01:57:07 +0000</pubDate>
+		<dc:creator>h2ospace</dc:creator>
+				<category><![CDATA[ニュース]]></category>
+
+		<guid isPermaLink="false">http://h2o-space.com/?p=133</guid>
+		<description><![CDATA[2010年9月に発売しました『よくわかるPHPの教科書』が、この度増刷となりまして、累計発行部数が2万部を突破いたしました。 発売1年あまりで、非常にたくさんの方々に愛読していただいていることを大変うれしく思います。 ま [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://www.amazon.co.jp/gp/product/4839933146/ref=as_li_ss_il?ie=UTF8&amp;tag=h2ospacelim09-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4839933146"><img class="alignleft" src="http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&amp;Format=_SL160_&amp;ASIN=4839933146&amp;MarketPlace=JP&amp;ID=AsinImage&amp;WS=1&amp;tag=h2ospacelim09-22&amp;ServiceVersion=20070822" border="0" alt="" /></a><img style="border: none !important; margin: 0px !important;" src="http://www.assoc-amazon.jp/e/ir?t=h2ospacelim09-22&amp;l=as2&amp;o=9&amp;a=4839933146" border="0" alt="" width="1" height="1" />2010年9月に発売しました『よくわかるPHPの教科書』が、この度増刷となりまして、累計発行部数が2万部を突破いたしました。</p>
+<p>発売1年あまりで、非常にたくさんの方々に愛読していただいていることを大変うれしく思います。</p>
+<p>また、多少関連したイベントである「<a href="http://h2o-space.com/news/130/">PHPで学ぶ　プログラム苦手克服seminar</a>」も11/23に開催いたしますので、すでにお持ちの方も、多少興味があるという方も、是非ともご参加いただけると幸いです。</p>
+<ul>
+<li><a href="http://www.amazon.co.jp/gp/product/4839933146/ref=as_li_ss_tl?ie=UTF8&amp;tag=h2ospacelim09-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=4839933146">よくわかるPHPの教科書</a><img style="border: none !important; margin: 0px !important;" src="http://www.assoc-amazon.jp/e/ir?t=h2ospacelim09-22&amp;l=as2&amp;o=9&amp;a=4839933146" border="0" alt="" width="1" height="1" /></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://h2o-space.com/news/133/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>【11/12】PHPで学ぶ　プログラム苦手克服seminarを再演します</title>
+		<link>http://h2o-space.com/news/130/</link>
+		<comments>http://h2o-space.com/news/130/#comments</comments>
+		<pubDate>Thu, 13 Oct 2011 14:31:23 +0000</pubDate>
+		<dc:creator>h2ospace</dc:creator>
+				<category><![CDATA[ニュース]]></category>
+
+		<guid isPermaLink="false">http://h2o-space.com/?p=130</guid>
+		<description><![CDATA[【11/04追記】以下のイベントですが、開催日時に間違いがありました。開催日時は「2011年 11月 12日」となります。大変失礼いたしました。 2011年11月23日、8月に開催した同内容のセミナーを再演いたします。  [...]]]></description>
+			<content:encoded><![CDATA[<p>【11/04追記】以下のイベントですが、開催日時に間違いがありました。開催日時は「2011年 11月 12日」となります。大変失礼いたしました。</p>
+<p><del>2011年11月23日</del>、8月に開催した同内容のセミナーを再演いたします。<br />
+前回の開催時、おかげさまで大好評をいただきまして、満席御礼で抽選に漏れた方もいたそうです。</p>
+<p>そこで、改めて50名様で開催をさせていただくことになりました。応募締切は11/1です。<br />
+ご興味があったけれど、前回は参加できなかった方はもちろん、新たにご興味をお持ちの方も是非ともご参加ください。</p>
+<ul>
+<li><a href="http://webcreatorsbank.mynavi-agent.jp/seminar/0041.html">PHPで学ぶ、プログラム苦手克服セミナー20110820｜WEBクリエイター職の派遣求人情報【WEB Creators Bank】</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://h2o-space.com/news/130/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>【10/30】ヒューマンアカデミー主催『現役Webクリエイターに聞く！　Web業界の歩き方セミナー』に出演いたします</title>
+		<link>http://h2o-space.com/news/128/</link>
+		<comments>http://h2o-space.com/news/128/#comments</comments>
+		<pubDate>Sun, 18 Sep 2011 17:42:26 +0000</pubDate>
+		<dc:creator>h2ospace</dc:creator>
+				<category><![CDATA[ニュース]]></category>
+
+		<guid isPermaLink="false">http://h2o-space.com/?p=128</guid>
+		<description><![CDATA[2011年 10月 30日に、ヒューマンアカデミーが主催するイベント『現役Webクリエイターに聞く！ Web業界の歩き方セミナー』が開催され、エイチツーオー・スペースのたにぐちまことが出演いたします。 このイベントでは、 [...]]]></description>
+			<content:encoded><![CDATA[<p>2011年 10月 30日に、ヒューマンアカデミーが主催するイベント『現役Webクリエイターに聞く！ Web業界の歩き方セミナー』が開催され、エイチツーオー・スペースのたにぐちまことが出演いたします。</p>
+<p>このイベントでは、Web業界で活躍される千貫 りこさん、伊藤 学さんと一緒に、Web業界で働きたい！　という方に向けて、前向きな話・後ろ向きな話を含め、自身の経験なども踏まえながら、トークショーの形式で展開していきます。</p>
+<p>非常に力の抜けた、気楽なイベントになると思いますので、ぜひ「遊びに行こう」という感覚で足を運んでいただければ幸いです。みなさまの将来のキャリアビジョンなどもお聞かせくださいませ。</p>
+<ul>
+<li><a href="http://haa.athuman.com/c/web/sem/webdesign_sem/">現役Webクリエーターに聞く　Web業界歩き方セミナー</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://h2o-space.com/news/128/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>【10/16】dotFes 2011 KYOTOに出演いたします</title>
+		<link>http://h2o-space.com/news/126/</link>
+		<comments>http://h2o-space.com/news/126/#comments</comments>
+		<pubDate>Thu, 15 Sep 2011 15:26:33 +0000</pubDate>
+		<dc:creator>h2ospace</dc:creator>
+				<category><![CDATA[ニュース]]></category>
+
+		<guid isPermaLink="false">http://h2o-space.com/?p=126</guid>
+		<description><![CDATA[2011年 10月 16日に京都精華大学（京都府）で開催される『dotFes 2011 京都』に出演いたします。 H2O Space. たにぐちまことは、テクニカルステージ「マルチデバイス対応のWebサイトをDreamw [...]]]></description>
+			<content:encoded><![CDATA[<p>2011年 10月 16日に京都精華大学（京都府）で開催される『dotFes 2011 京都』に出演いたします。<br />
+H2O Space. たにぐちまことは、テクニカルステージ「マルチデバイス対応のWebサイトをDreamweaverで作る」と題し、アドビシステムズの太田禎一さんと共に、Dreamweaver使いならではのデモンストレーションを披露できればと思っております。</p>
+<p>その他にも、元Paperboy&#038;Co.の家入一真さんの出演など、非常に豪華なイベントになっています。ご興味がある方は是非ともチェックしてみてください。</p>
+<ul>
+<li><a href="http://www.dotfes.jp/2011kyoto/">dotFes 2011 京都 | creative conference in campus</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://h2o-space.com/news/126/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>【10/29】第6回リクリセミナー（大阪）に出演いたします</title>
+		<link>http://h2o-space.com/news/124/</link>
+		<comments>http://h2o-space.com/news/124/#comments</comments>
+		<pubDate>Wed, 14 Sep 2011 05:28:50 +0000</pubDate>
+		<dc:creator>h2ospace</dc:creator>
+				<category><![CDATA[ニュース]]></category>
+
+		<guid isPermaLink="false">http://h2o-space.com/?p=124</guid>
+		<description><![CDATA[関西のクリエイタの交流や勉強会・セミナーの開催を行っているコミュニティ「Re:Creator&#8217;s Kansai」様が主催される、『第6回リクリセミナー　スマートフォン向けサイト制作の「これから」を考える』に出 [...]]]></description>
+			<content:encoded><![CDATA[<p>関西のクリエイタの交流や勉強会・セミナーの開催を行っているコミュニティ「Re:Creator&#8217;s Kansai」様が主催される、『第6回リクリセミナー　スマートフォン向けサイト制作の「これから」を考える』に出演いたします。</p>
+<p>H2O Space. たにぐちまことは、「いまどきのスマホサイト制作術」として、現在の国内のスマホ事情などに合わせて、サイト制作のノウハウが変わってきていることなどをご紹介いたします。</p>
+<p>to-Rの西畑一馬さん、Goodpatch Inc.の谷拓樹さんも出演されます。非常に内容の濃いセミナーになりそうなので、関西にお住まいのみなさまは是非ともご参加いただければ幸いです。</p>
+<ul>
+<li><a href="http://www.re-creators.jp/vol6/">『スマートフォン向けサイト制作の「これから」を考える』- 第6回リクリセミナー（大阪）</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://h2o-space.com/news/124/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>【10/21】JAGAT主催 クロスメディア研究会セミナーに出演いたします</title>
+		<link>http://h2o-space.com/news/118/</link>
+		<comments>http://h2o-space.com/news/118/#comments</comments>
+		<pubDate>Mon, 12 Sep 2011 09:27:50 +0000</pubDate>
+		<dc:creator>h2ospace</dc:creator>
+				<category><![CDATA[ニュース]]></category>
+
+		<guid isPermaLink="false">http://h2o-space.com/?p=118</guid>
+		<description><![CDATA[2011年 10月 21日に、社団法人日本印刷技術協会（JAGAT）が主催する「スマートフォン向けサイト制作のポイントと、HTML5の可能性を理解する 」に登壇させていただきます。 H2O Space. たにぐちまことは [...]]]></description>
+			<content:encoded><![CDATA[<p>2011年 10月 21日に、社団法人日本印刷技術協会（JAGAT）が主催する「スマートフォン向けサイト制作のポイントと、HTML5の可能性を理解する 」に登壇させていただきます。</p>
+<p>H2O Space. たにぐちまことは「変わる、スマートフォン向けサイト制作の最新事情」と題し、スマートフォンの急激な普及や、タブレット端末の登場、Windows Phoneの登場など、現在の状況に合わせて変わりつつある「スマホサイト制作」の現場の変化を、お伝えしようと思います。</p>
+<p>同じく株式会社エル・カミノ・リアル 木寺様からは「Webかアプリか？HTML5によるビジネスチャンス」という Webアプリに関するセッションをお届けいたします。どちらも、今必ず押させておきたいトレンドです。是非ともご参加いただけると幸いです。</p>
+<ul>
+<li><a href="http://www.jagat.jp/content/view/3104/105">スマートフォン向けサイト制作のポイントと、HTML5の可能性を理解する 【クロスメディア研究会セミナー】 &#8211; JAGAT</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://h2o-space.com/news/118/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>ロフトワーク ウェブエキスパートに取材していただきました</title>
+		<link>http://h2o-space.com/news/114/</link>
+		<comments>http://h2o-space.com/news/114/#comments</comments>
+		<pubDate>Wed, 31 Aug 2011 17:36:56 +0000</pubDate>
+		<dc:creator>h2ospace</dc:creator>
+				<category><![CDATA[ニュース]]></category>
+
+		<guid isPermaLink="false">http://h2o-space.com/?p=114</guid>
+		<description><![CDATA[ロフトワーク様が運営する、Web情報サイトの「ウェブエキスパート」において、弊社たにぐちまことを取材していただきました。 『たにぐちまこと氏が教える！　Web担当者が知っておきたい、企業サイトの賢いスマートフォン対応とは [...]]]></description>
+			<content:encoded><![CDATA[<p>ロフトワーク様が運営する、Web情報サイトの「ウェブエキスパート」において、弊社たにぐちまことを取材していただきました。</p>
+<p>『たにぐちまこと氏が教える！　Web担当者が知っておきたい、企業サイトの賢いスマートフォン対応とは？』と題して、前・後編の2回に分かってインタビュー形式で、企業のスマートフォンサイト対策についてをお話しさせていただいております。</p>
+<p>半年前の講演などとは、現在のスマートフォン市場はがらりと変わってしまっていて、私自身の言葉にも変化が生じていることを感じていただけるかと思います。最新の情報を交えて、ご覧いただければ幸いです。</p>
+<ul>
+<li><a href="http://www.webexp.jp/feature/201108/201108smart_phone01_01.html">たにぐちまこと氏が教える！　Web担当者が知っておきたい、企業サイトの賢いスマートフォン対応とは？　前編</a></li>
+<li><a href="http://www.webexp.jp/feature/201108/201108smart_phone02_01.html">たにぐちまこと氏が教える！　Web担当者が知っておきたい、企業サイトの賢いスマートフォン対応とは？　後編</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://h2o-space.com/news/114/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Adobe Developer Connectionで「強化されたjQuery開発環境」が掲載されました</title>
+		<link>http://h2o-space.com/news/112/</link>
+		<comments>http://h2o-space.com/news/112/#comments</comments>
+		<pubDate>Sat, 30 Jul 2011 07:24:57 +0000</pubDate>
+		<dc:creator>h2ospace</dc:creator>
+				<category><![CDATA[ニュース]]></category>
+
+		<guid isPermaLink="false">http://h2o-space.com/?p=112</guid>
+		<description><![CDATA[Adobeが連載する、Creative Suiteシリーズの使いこなし連載で、弊社たにぐちが執筆しました『Dreamweaver CS5.5 マスターシリーズ 第4回　強化されたjQuery開発環境』が公開されました。  [...]]]></description>
+			<content:encoded><![CDATA[<p>Adobeが連載する、Creative Suiteシリーズの使いこなし連載で、弊社たにぐちが執筆しました『Dreamweaver CS5.5 マスターシリーズ 第4回　強化されたjQuery開発環境』が公開されました。</p>
+<p>Dreamweaverに搭載されている、jQueryのコードヒント機能を実例を交えて紹介しています。是非、参考になさってください。</p>
+<ul>
+<li><a href="http://www.adobe.com/jp/joc/devnet/dreamweaver/articles/ms_dw_cs55_04.html">Dreamweaver CS5.5 マスターシリーズ 第4回　強化されたjQuery開発環境 | デベロッパーセンター</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://h2o-space.com/news/112/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

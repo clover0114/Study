@@ -1,0 +1,169 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>スライドショースクリプト</title> 
+<link rel="stylesheet" href="../../_shared/css/reset.css"> 
+<link rel="stylesheet" href="../../_shared/css/base.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style type="text/css">
+#slideshow {
+	margin-bottom: 10px;
+	min-height: 300px;
+}
+
+#slideshow li {
+	text-align: center;
+	font-size: 80%;
+	color: #666;
+	float: left;
+	margin: 15px;
+	min-height: 100px;
+}
+
+#slideshow img {
+	margin-bottom: 5px;
+}
+
+nav {
+	clear: both;
+	text-align: center;
+}
+
+nav li {
+	display: inline;
+	margin: 0 5px;
+}
+
+#largeImg {
+	display: none;
+	border: 1px solid #fff;
+}
+#cover {
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+</style>
+
+</head> 
+<body>
+
+<header>
+<div class="inner">
+<h1><span>slideshow</span>スライドショースクリプト</h1>
+</div>
+<!-- header --></header>
+
+<div id="contents">
+<div class="inner">
+
+<div id="slideshow" class="clearfix">
+<p style="text-align: center; margin: 200px 0"><img src="ajax-loader.gif" alt="読み込み中です"></p>
+</div>
+<noscript>
+<p>JavaScriptを有効にしてご覧ください</p>
+</noscript>
+
+<nav>
+<ul>
+<li><a href="javascript:void(0)">&laquo; 前の 10件へ</a></li>
+<li><a href="javascript:void(0)">次の 10件へ &raquo;</a></li>
+</ul>
+</nav>
+
+</div>
+</div>
+<!-- inner --></div>
+<!-- contents --></div>
+
+<div id="cover"></div>
+<div id="largeImg"><img width="400" src=""></div>
+
+<footer>
+<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+<!-- footer --></footer>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="jquery.ba-hashchange.min.js"></script>
+<script type="text/javascript">
+var PAGE_CNT = 10;	// 1ページの表示数
+var page = 1;
+
+if (location.hash != '') {
+	page = parseInt(location.hash.replace('#', ''));
+}
+
+/* スライドショーの作成 */
+function createSlide(page) {
+	$.getJSON('images.json', null, function(json) {
+		if (page < 0 || (page-1) * PAGE_CNT > json.length) {
+			$('#slideshow').html('<p style="text-align: center; margin-top: 300px">Not found</p>');
+			return false;
+		}
+
+		var ul = $('<ul>');
+		for (var i = (page-1) * PAGE_CNT; i < json.length; i++) {
+			ul.append('<li><a href="' + json[i].image.replace('.jpg', '_big.jpg') + '"><img src="' + json[i].image + '" width="100"></a><br><p>' + json[i].caption + '</p></li>');
+			
+			if (i >= page * PAGE_CNT - 1) break;		
+		}
+		
+		var cnt = 0;
+		$('#slideshow').html(ul).find('li').each(function() {
+			$(this).hide().delay(200 * cnt++).fadeIn('5000');
+		});
+		
+		// 前へ・次へボタンの制御
+		if (page > 1) {
+			$('nav li:eq(0)').html('<a href="index.html#' + (page-1) + '">&laquo; 前の 10件へ</a>');
+		} else {
+			$('nav li:eq(0)').html('<span>&laquo; 前の 10件へ</span>');
+		}
+		
+		if (page * PAGE_CNT < json.length) {
+			$('nav li:eq(1)').html('<a href="index.html#' + (page+1) + '">次の 10件へ &raquo;</a>');
+		} else {
+			$('nav li:eq(1)').html('<span>次の 10件へ &raquo;</span>');
+		}
+	});
+}
+createSlide(page);
+
+$('#slideshow a').live('click', function(e) {
+	e.preventDefault();
+	$('#cover').css({
+		'width': $(window).width(),
+		'height': $(window).height()
+	})
+	.show();
+
+	$('#largeImg').css({
+		'position': 'absolute',
+		'left': Math.floor(($(window).width() - 400) / 2) + 'px',
+		'top': $(window).scrollTop() + 30 + 'px'
+	})
+	.find('img').attr('src', $(this).attr('href')).end()
+	.fadeIn('slow');
+});
+
+$('#cover, #largeImg').bind('click', function() {
+	$('#largeImg').fadeOut('slow', function() {
+		$('#cover').hide();
+	});
+});
+
+$(window).bind('hashchange', function() {
+	createSlide(parseInt(location.hash.replace('#', '')));
+});
+
+</script>
+
+</body>
+</html>

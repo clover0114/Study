@@ -1,0 +1,48 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>数字に3桁ごとにカンマを入れるファンクションを作る</title> 
+<link rel="stylesheet" href="../../_shared/css/reset.css"> 
+<link rel="stylesheet" href="../../_shared/css/base.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+function numberFormat(source) {
+	var s = new String(source);
+	var ret = '';
+	
+	for (var i=s.length-3; i>0; i-=3) {
+		ret = ',' + s.substr(i, 3) + ret;
+	}
+	ret = s.substr(0, i+3) + ret;
+	
+	return ret;
+}
+</script>
+</head> 
+<body>
+
+<header>
+<div class="inner">
+<h1><span>function</span>数字に3桁ごとにカンマを入れるファンクションを作る</h1>
+</div>
+<!-- header --></header>
+
+<div id="contents">
+<div class="inner">
+
+<script type="text/javascript">
+document.write('合計金額は、' + numberFormat(2890*5) + '円です<br>');
+</script>
+
+<!-- inner --></div>
+<!-- contents --></div>
+
+<footer>
+<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+<!-- footer --></footer>
+
+</body>
+</html>

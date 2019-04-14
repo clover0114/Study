@@ -1,0 +1,45 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+<head> 
+<meta charset="UTF-8">
+
+<title>目覚まし時計を作る</title> 
+<link rel="stylesheet" href="../../_shared/css/reset.css"> 
+<link rel="stylesheet" href="../../_shared/css/base.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<header>
+<div class="inner">
+<h1><span>if</span>目覚まし時計を作る</h1>
+</div>
+<!-- header --></header>
+
+<div id="contents">
+<div class="inner">
+
+<p>もう一度確認するには、このページをリロードしてください。</p>
+
+<!-- inner --></div>
+<!-- contents --></div>
+
+<footer>
+<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+<!-- footer --></footer>
+
+<script type="text/javascript">
+var now = new Date();
+var hour = now.getHours();
+var minute = now.getMinutes();
+var second = now.getSeconds();
+
+if ((hour == 9 && minute == 30 && second == 0) || (hour == 10 && minute == 00 && second == 45)) {
+	alert('起きる時間です');
+}
+</script>
+
+</body>
+</html>

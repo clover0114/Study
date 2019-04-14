@@ -1,0 +1,68 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>現在地を表示する</title> 
+<link rel="stylesheet" href="../../_shared/css/reset.css"> 
+<link rel="stylesheet" href="../../_shared/css/base.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head> 
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true">
+</script>
+<body>
+
+<header>
+<div class="inner">
+<h1><span>GeoLocation</span>現在地を表示する</h1>
+</div>
+<!-- header --></header>
+
+<div id="contents">
+<div class="inner">
+
+<div id="content">
+<div id="map_canvas" style="width:100%; height:500px"></div>
+</div>
+
+<!-- inner --></div>
+<!-- contents --></div>
+
+<footer>
+<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. MYCOM"></small>
+<!-- footer --></footer>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+$(function() {
+
+	/* 位置情報を取得します */
+	var lat, lon;
+	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(
+			function(pos) {	// 成功時
+				lat = pos.coords.latitude;
+				lon = pos.coords.longitude;
+
+				var latlng = new google.maps.LatLng(lat, lon);
+				var myOptions = {
+					zoom: 15,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+			},
+			function() {
+				alert('位置情報が正しく取得できませんでした');
+			}, {
+				timeout: 10000,
+				maximumAge: 0,
+				enableHighAccuracy: true
+		});
+	}
+});
+</script>
+</body>
+</html>

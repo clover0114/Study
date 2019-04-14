@@ -1,0 +1,92 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>複数の画像をポップアップ表示する</title> 
+<link rel="stylesheet" href="../../_shared/css/reset.css"> 
+<link rel="stylesheet" href="../../_shared/css/base.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style type="text/css">
+ul {
+	margin: 0 10px;
+}
+li {
+	float: left;
+	margin: 5px;
+}
+li img {
+	box-shadow: 1px 1px 5px #333;
+}
+#largeImg {
+	display: none;
+	border: 1px solid #fff;
+}
+#cover {
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+</style>
+</head> 
+<body>
+
+<header>
+<div class="inner">
+<h1><span>find, end, each</span>複数の画像をポップアップ表示する</h1>
+</div>
+<!-- header --></header>
+
+<div id="contents">
+<div class="inner">
+
+<ul class="gallery">
+<li><a href="img/img1.jpg"><img src="img/img1_thumb.jpg"></a></li>
+<li><a href="img/img2.jpg"><img src="img/img2_thumb.jpg"></a></li>
+<li><a href="img/img3.jpg"><img src="img/img3_thumb.jpg"></a></li>
+</ul>
+
+
+<div id="cover"></div>
+<div id="largeImg"><img width="400" src="img/img1.jpg"></div>
+
+</div>
+</div>
+<!-- inner --></div>
+<!-- contents --></div>
+
+<footer>
+<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+<!-- footer --></footer>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$('.gallery a').bind('click', function(e) {
+	e.preventDefault();
+	$('#cover').css({
+		'width': $(window).width(),
+		'height': $(window).height()
+	})
+	.show();
+
+	$('#largeImg').css({
+		'position': 'absolute',
+		'left': Math.floor(($(window).width() - 400) / 2) + 'px',
+		'top': $(window).scrollTop() + 30 + 'px'
+	})
+	.find('img').attr('src', $(this).attr('href')).end()
+	.fadeIn('slow');
+});
+
+$('#cover, #largeImg').bind('click', function() {
+	$('#largeImg').fadeOut('slow', function() {
+		$('#cover').hide();
+	});
+});
+</script>
+</body>
+</html>

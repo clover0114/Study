@@ -1,0 +1,58 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>ボタンをロールオーバーする</title> 
+<link rel="stylesheet" href="../../_shared/css/reset.css"> 
+<link rel="stylesheet" href="../../_shared/css/base.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style>
+</style>
+</head> 
+<body>
+
+<header>
+<div class="inner">
+<h1><span>mouseenter, mouseleave</span>ボタンをロールオーバーする</h1>
+</div>
+<!-- header --></header>
+
+<div id="contents">
+<div class="inner">
+
+<nav>
+<ul>
+<li><a href="#"><img src="img/btn_company_off.gif" alt="会社情報"></a></li>
+<li><a href="#"><img src="img/btn_product_off.gif" alt="製品情報"></a></li>
+<li><a href="#"><img src="img/btn_contact_off.gif" alt="お問い合わせ"></a></li>
+</ul>
+</nav>
+
+</div>
+</div>
+<!-- inner --></div>
+<!-- contents --></div>
+
+<footer>
+<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+<!-- footer --></footer>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+/* 画像をプリロード */
+$('nav img').each(function() {
+	$('<img>').attr('src', $(this).attr('src').replace('_off', '_on'));
+});
+
+$('nav img').bind('mouseenter', function() {
+	$(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+})
+.bind('mouseleave', function() {
+	$(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+});
+</script>
+</body>
+</html>

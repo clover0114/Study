@@ -1,0 +1,51 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>選ばれた年齢によって、割引率を変える</title> 
+<link rel="stylesheet" href="../../_shared/css/reset.css"> 
+<link rel="stylesheet" href="../../_shared/css/base.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head> 
+<body>
+
+<header>
+<div class="inner">
+<h1><span>if else, switch</span>選ばれた年齢によって、割引率を変える</h1>
+</div>
+<!-- header --></header>
+
+<div id="contents">
+<div class="inner">
+
+<h2>年齢</h2>
+<select id="age" name="age">
+<option value="">お選びください</option>
+<option value="10">10歳以下</option>
+<option value="30">11-30歳</option>
+<option value="50">31-50歳</option>
+<option value="51">51歳以上</option>
+</select>
+
+<!-- inner --></div>
+<!-- contents --></div>
+
+<footer>
+<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+<!-- footer --></footer>
+
+<script type="text/javascript">
+document.getElementById('age').onchange = function() {
+var age = document.getElementById('age').value;
+if (age === '10') {
+alert('10歳以下の方は、半額です');
+}
+if (age === '30') {
+alert('11-30歳の方は割引はありません');
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>jQuery Mobileでスマートフォンサイトを作る</title> 
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+</head> 
+<body>
+
+<div id="top" data-role="page">
+<header data-role="header">
+<h1>jQuery Mobileでスマートフォンサイトを作る</h1>
+<a href="#contact" data-rel="dialog" class="ui-btn-right" data-icon="check">Contact</a>
+</header>
+
+<div data-role="content">
+<ul data-role="listview">
+<li><a href="#company">会社情報</a></li>
+<li><a href="#product" data-transition="slideup">製品情報</a></li>
+<li><a href="#contact" data-rel="dialog">お問い合わせ</a></li>
+</ul>
+</div>
+
+<footer data-role="footer">
+<h4>&copy; <a href="http://h2o-space.com" data-rel="external">H2O Space.</a> Mynavi</h4>
+</footer>
+</div>
+
+<div id="company" data-role="page">
+<header data-role="header">
+<h1>jQuery Mobileでスマートフォンサイトを作る</h1>
+</header>
+
+<div data-role="content">
+<h1>会社情報</h1>
+
+<p>会社情報のページです</p>
+<a data-role="button" href="#top" data-rel="back">トップへ</a>
+</div>
+
+<footer data-role="footer">
+<h4>&copy; <a href="http://h2o-space.com">H2O Space.</a> MYCOM</h4>
+</footer>
+</div>
+
+<div id="product" data-role="page">
+<header data-role="header">
+<h1>jQuery Mobileでスマートフォンサイトを作る</h1>
+</header>
+
+<div data-role="content">
+<h1>製品情報</h1>
+
+<p>製品情報のページです</p>
+<a data-role="button" href="#top" data-rel="back">トップへ</a>
+</div>
+
+<footer data-role="footer">
+<h4>&copy; <a href="http://h2o-space.com">H2O Space.</a> MYCOM</h4>
+</footer>
+</div>
+
+<div id="contact" data-role="page">
+<header data-role="header">
+<h1>jQuery Mobileでスマートフォンサイトを作る</h1>
+</header>
+
+<div data-role="content">
+<h1>お問い合わせ</h1>
+
+<div data-role="fieldcontain">
+<label for="name">名前:</label>
+<input type="text" name="name" id="name" value=""  />
+</div>
+
+<div data-role="fieldcontain">
+<fieldset data-role="controlgroup" data-type="horizontal">
+<legend>性別</legend>
+<input type="radio" name="radio-choice-b" id="radio-choice-c" value="on" checked="checked" />
+<label for="radio-choice-c">男性</label>
+<input type="radio" name="radio-choice-b" id="radio-choice-d" value="off" />
+<label for="radio-choice-d">女性</label>
+</fieldset>
+</div>
+
+<div data-role="fieldcontain">
+<label for="textarea">ご意見:</label>
+<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+</div>
+
+<fieldset class="ui-grid-a">
+<div class="ui-block-a"><button type="submit" data-theme="a">送信する</button></div>
+<div class="ui-block-b"><button type="submit">キャンセル</button></div>
+</fieldset>
+
+</div>
+
+<footer data-role="footer">
+<h4>&copy; <a href="http://h2o-space.com">H2O Space.</a> MYCOM</h4>
+</footer>
+</div>
+
+
+
+</body>
+</html>

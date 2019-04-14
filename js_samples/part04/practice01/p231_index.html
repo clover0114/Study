@@ -1,0 +1,107 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>スライドショースクリプト</title> 
+<link rel="stylesheet" href="../../_shared/css/reset.css"> 
+<link rel="stylesheet" href="../../_shared/css/base.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style type="text/css">
+#slideshow {
+	margin-bottom: 10px;
+	min-height: 300px;
+}
+
+#slideshow li {
+	text-align: center;
+	font-size: 80%;
+	color: #666;
+	float: left;
+	margin: 15px;
+	min-height: 100px;
+}
+
+#slideshow img {
+	margin-bottom: 5px;
+}
+
+nav {
+	clear: both;
+	text-align: center;
+}
+
+nav li {
+	display: inline;
+	margin: 0 5px;
+}
+
+#largeImg {
+	display: none;
+	border: 1px solid #fff;
+}
+#cover {
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+</style>
+
+</head> 
+<body>
+
+<header>
+<div class="inner">
+<h1><span>slideshow</span>スライドショースクリプト</h1>
+</div>
+<!-- header --></header>
+
+<div id="contents">
+<div class="inner">
+
+<div id="slideshow" class="clearfix">
+<p style="text-align: center; margin: 200px 0"><img src="ajax-loader.gif" alt="読み込み中です"></p>
+</div>
+<noscript>
+<p>JavaScriptを有効にしてご覧ください</p>
+</noscript>
+
+<nav>
+<ul>
+<li><a href="#">&laquo; 前の 10件へ</a></li>
+<li><a href="#">次の 10件へ &raquo;</a></li>
+</ul>
+</nav>
+
+</div>
+</div>
+<!-- inner --></div>
+<!-- contents --></div>
+
+<div id="cover"></div>
+<div id="largeImg"><img width="400" src=""></div>
+
+<footer>
+<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+<!-- footer --></footer>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+$.getJSON('images.json', null, function(json) {
+	var ul = $('<ul>');
+	for (var i = 0; i < json.length; i++) {
+		ul.append('<li><a href="' + json[i].image.replace('.jpg', '_big.jpg') + '"><img src="' + json[i].image + '" width="100"></a><br><p>' + json[i].caption + '</p></li>');
+	}
+
+	$('#slideshow').html(ul);
+});
+
+</script>
+
+</body>
+</html>

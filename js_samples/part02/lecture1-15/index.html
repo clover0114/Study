@@ -1,0 +1,70 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>価格を扱うオブジェクトを作る</title> 
+<link rel="stylesheet" href="../../_shared/css/reset.css"> 
+<link rel="stylesheet" href="../../_shared/css/base.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+
+<header>
+<div class="inner">
+<h1><span>Object</span>価格を扱うオブジェクトを作る</h1>
+</div>
+<!-- header --></header>
+
+<div id="contents">
+<div class="inner">
+
+<script type="text/javascript">
+
+</script>
+
+<p>1,280円の税込み価格は、
+<script type="text/javascript">
+var Price = function(price) {
+	this.tax;
+	this.price = price;
+	
+	this.addTax = function() {
+		this.price += Math.round(this.price * this.tax / 100);
+	}
+	
+	this.format = function() {
+		var s = new String(this.price);
+		var ret = '';
+		
+		for (var i=s.length-3; i>0; i-=3) {
+			ret = ',' + s.substr(i, 3) + ret;
+		}
+		ret = s.substr(0, i+3) + ret;
+		
+		return ret;
+	}
+}
+
+var thisPrice = new Price(1280);
+thisPrice.tax = 5;	// 消費税は 5%
+thisPrice.addTax();
+
+document.write(thisPrice.format())
+</script>
+円です。
+</p>
+
+<!-- inner --></div>
+<!-- contents --></div>
+
+<footer>
+<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+<!-- footer --></footer>
+
+</body>
+</html>

@@ -39,7 +39,11 @@
         margin-right: -100px;
         padding-left: 100px;
         padding-right: 100px;  */
-     transition: .5s;
+     transition: 0.8s;
+ }
+
+ .header.header_2 {
+     margin-top: 3.5rem;
  }
 
  .transform {

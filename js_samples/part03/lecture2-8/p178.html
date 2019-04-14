@@ -1,0 +1,72 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>高度なアニメでお知らせを表示する</title> 
+<link rel="stylesheet" href="../../_shared/css/reset.css"> 
+<link rel="stylesheet" href="../../_shared/css/base.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style type="text/css">
+.inner {
+	position: relative;
+}
+#news {
+	width: 300px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	background-color: #ffc2d7;
+	padding: 15px;
+	position: absolute;
+	left: 210px;
+	top: 30px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+</style>
+</head> 
+<body>
+
+<header>
+<div class="inner">
+<h1><span>delay, stop, [animation queue]</span>高度なアニメでお知らせを表示する</h1>
+</div>
+<!-- header --></header>
+
+<div id="contents">
+<div class="inner">
+
+<p>もう一度確認するには、このページをリロードしてください。</p>
+
+<div id="news">
+<p>このページをブックマークに登録しておくと、次回から便利にご利用いただけます</p>
+</div>
+
+</div>
+</div>
+<!-- inner --></div>
+<!-- contents --></div>
+
+<footer>
+<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+<!-- footer --></footer>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$('#news')
+	.css({
+		'top': '-100px'
+	})
+	.animate({
+		'top': '40px'
+	}, 1000)
+	.animate({
+		'top': '30px'
+	}, 500)
+	.delay(3000)
+	.fadeOut('slow');
+</script>
+</body>
+</html>

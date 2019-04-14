@@ -1,0 +1,55 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>XMLファイルを解析する</title> 
+<link rel="stylesheet" href="../../_shared/css/reset.css"> 
+<link rel="stylesheet" href="../../_shared/css/base.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style type="text/css">
+li {
+	list-style: disc;
+	margin-bottom: 5px;
+	margin-left: 20px;
+}
+</style>
+</head> 
+<body>
+
+<header>
+<div class="inner">
+<h1><span>ajax, find</span>XMLファイルを解析する</h1>
+</div>
+<!-- header --></header>
+
+<div id="contents">
+<div class="inner">
+
+<h2>お知らせ</h2>
+<div id="news"><p>ロード中です…（更新されない場合は<a href="news.html">こちら</a>をご覧ください）</div>
+
+</div>
+</div>
+<!-- inner --></div>
+<!-- contents --></div>
+
+<footer>
+<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+<!-- footer --></footer>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+function callback(news) {
+	var html = '';
+	for (i in news) {
+		html += '<li><a href="' + news[i].link + '">' + news[i].title + '</a></li>';	
+	}
+	$('#news').html('<ul>' + html + '</ul>');
+}
+</script>
+<script type="text/javascript" src="http://h2o-space.com/news_jsonp.js"></script>
+</body>
+</html>
