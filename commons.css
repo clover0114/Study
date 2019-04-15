@@ -8,8 +8,8 @@
 
  html {
      width: 100vw;
-     font-size: 62.5%;
-     font-size: calc(100vw/64);
+     /* font-size: 62.5%; */
+     font-size: calc(100vw/100);
      background-color: rgb(190, 151, 151);
  }
 
@@ -25,7 +25,7 @@
 
  .header {
      width: inherit;
-     height: 3.5rem;
+     height: 2.5rem;
      background: linear-gradient(180deg, rgb(222, 228, 220), rgb(216, 216, 189));
      box-shadow: 0px 1px 2px rgb(140, 123, 145);
      position: fixed;
@@ -201,14 +201,13 @@
 
  /* テキスト */
  .title_h1 {
-     padding: 1.1rem;
+     padding: 0.7rem;
      padding-left: 4.2rem;
      font-weight: bold;
  }
 
- /* テキスト */
  .title_h2 {
-     padding: 1.1rem;
+     padding: 0.7rem;
      padding-left: 4.2rem;
      font-weight: lighter;
  }
@@ -233,4 +232,26 @@
 
  .firstlet:first-letter {
      font-size: 3em;
+ }
+
+ /* img */
+
+ .cat_img {
+     width: 20rem;
+     height: auto;
+     border-radius: 10px;
+     margin-bottom: 2rem;
+     box-shadow: 0rem 1rem 1rem #ddd;
+ }
+
+ #largeImg {
+     display: none;
+ }
+
+ #cover {
+     background: rgba(0, 0, 0, .5);
+     display: none;
+     position: absolute;
+     left: 0;
+     top: 0;
  }

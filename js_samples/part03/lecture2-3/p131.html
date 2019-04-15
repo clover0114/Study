@@ -1,16 +1,17 @@
-<!DOCTYPE HTML> 
-<html lang="ja"> 
-<head> 
-<meta charset="UTF-8"> 
-<title>開閉できるツールボックス</title> 
-<link rel="stylesheet" href="../../_shared/css/reset.css"> 
-<link rel="stylesheet" href="../../_shared/css/base.css">
-<!--[if lt IE 9]>
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>開閉できるツールボックス</title>
+	<link rel="stylesheet" href="../../_shared/css/reset.css">
+	<link rel="stylesheet" href="../../_shared/css/base.css">
+	<!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<style>
-p {
+	<style>
+		p {
 	margin-bottom: 1em;
 }
 
@@ -38,49 +39,50 @@ p {
 	text-decoration: none;
 }
 </style>
-</head> 
+</head>
+
 <body>
 
-<header>
-<div class="inner">
-<h1><span>css, slideToggle</span>開閉できるツールボックス</h1>
-</div>
-<!-- header --></header>
+	<header>
+		<div class="inner">
+			<h1><span>css, slideToggle</span>開閉できるツールボックス</h1>
+		</div>
+		<!-- header -->
+	</header>
 
-<div id="contents">
-<div class="inner">
+	<div id="contents">
+		<div class="inner">
 
-<p>ツールを開くには、タイトルバーをクリックしてください</p>
+			<p>ツールを開くには、タイトルバーをクリックしてください</p>
 
-<div id="toolBox">
-<p id="toolTitle"><a href="#toolContent">ファイル</a></p>
-<div id="toolContent">
-<ul>
-<li>新規</li>
-<li>上書き保存</li>
-<li>名前を付けて保存</li>
-<li>とじる</li>
-</ul>
-</div>
-</div>
-<!-- inner --></div>
-<!-- contents --></div>
+			<div id="toolBox">
+				<p id="toolTitle"><a href="#toolContent">ファイル</a></p>
+				<div id="toolContent">
+					<ul>
+						<li>新規</li>
+						<li>上書き保存</li>
+						<li>名前を付けて保存</li>
+						<li>とじる</li>
+					</ul>
+				</div>
+			</div>
+			<!-- inner -->
+		</div>
+		<!-- contents -->
+	</div>
 
-<footer>
-<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
-<!-- footer --></footer>
+	<footer>
+		<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+		<!-- footer -->
+	</footer>
 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript">
-$('#toolContent').hide();
-
-$('#toolTitle').bind('click', function() {
-	if ($('#toolContent').css('display') == 'none') {
-		$('#toolContent').slideDown();
-	} else {
-		$('#toolContent').slideUp();
-	}
-});
-</script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$('#toolContent').hide();
+		$('#toolTitle').bind('click', function () {
+			$('#toolContent').slideToggle('fast');
+		});
+	</script>
 </body>
+
 </html>

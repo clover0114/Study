@@ -1,39 +1,64 @@
-<!DOCTYPE HTML> 
-<html lang="ja"> 
-<head> 
-<meta charset="UTF-8"> 
-<title>jQueryの基本</title> 
-<link rel="stylesheet" href="../../_shared/css/reset.css"> 
-<link rel="stylesheet" href="../../_shared/css/base.css">
-<!--[if lt IE 9]>
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQueryの基本</title>
+    <link rel="stylesheet" href="../../_shared/css/reset.css">
+    <link rel="stylesheet" href="../../_shared/css/base.css">
+    <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-</head> 
+</head>
+
 <body>
 
-<header>
-<div class="inner">
-<h1><span>html,css</span>jQueryの基本</h1>
-</div>
-<!-- header --></header>
+    <header>
+        <div class="inner">
+            <h1><span>html,css</span>jQueryの基本</h1>
+        </div>
+        <!-- header -->
+    </header>
 
-<div id="contents">
-<div class="inner">
+    <div id="contents">
+        <div class="inner">
 
-<div id="content">
-<p>jQueryを試してみます</p>
-</div>
+            <button id="btn" value="ぼたん">色を変えるボタン</button>
+            <button id="txtbtn" value="てきすと">テキストをかえるぼたん</button>
 
-<!-- inner --></div>
-<!-- contents --></div>
+            <div id="content">
+                <p>jQueryを試してみます</p>
+            </div>
 
-<footer>
-<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
-<!-- footer --></footer>
+            <!-- inner -->
+        </div>
+        <!-- contents -->
+    </div>
 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript">
-jQuery('#content p').html('jQueryで内容を書き換えます');
-</script>
+    <footer>
+        <small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+        <!-- footer -->
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        // jQuery('#content p').html('jQueryで内容を書き換えます');
+        $('#btn').bind('click', function () {
+            if (!confirm('色をかえてもいいいいいいですか？')) {
+                alert('中止しました');
+            } else {
+                $('#content p').css('color', 'blue');
+            }
+        });
+
+        $('#txtbtn').bind('click', function () {
+            if (!confirm('テキストをかえてもいいいいいいですか？')) {
+                alert('中止しました');
+            } else {
+                $('#content p').css('color', '#f00').html('<p>テキスト変更したぞー</p>');
+            }
+        });
+    </script>
 </body>
+
 </html>

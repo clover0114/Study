@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    color: white;
+}
+
+header {
+    line-height: 15em;
+    text-align: center;
+    background: #333;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.wrap {
+    width: 960px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+article {
+    line-height: 20em;
+    text-align: center;
+    background: #666;
+    width: 640px;
+    float: left;
+}
+
+aside {
+    line-height: 20em;
+    text-align: center;
+    background: #999;
+    width: 280px;
+    float: right;
+}
+
+footer {
+    line-height: 15em;
+    text-align: center;
+    background: #BBB;
+    width: 960px;
+    margin: 0 auto;
+}
+
+@media (max-width : 1024px) {
+    header {
+        width: 100%;
+    }
+
+    .wrap {
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+        float: none;
+    }
+
+    aside {
+        width: 100%;
+        float: none;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
