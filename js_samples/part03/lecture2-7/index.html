@@ -1,98 +1,127 @@
-<!DOCTYPE HTML> 
-<html lang="ja"> 
-<head> 
-<meta charset="UTF-8"> 
-<title>フォームの入力チェックをする</title> 
-<link rel="stylesheet" href="../../_shared/css/reset.css"> 
-<link rel="stylesheet" href="../../_shared/css/base.css">
-<!--[if lt IE 9]>
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>フォームの入力チェックをする</title>
+	<link rel="stylesheet" href="../../_shared/css/reset.css">
+	<link rel="stylesheet" href="../../_shared/css/base.css">
+	<!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<style type="text/css">
-input.error {
-	background-color: #fcc;
-}
-p.error {
-	color: #f00;
-	margin-top: 5px;
-}
-.require {
-	background-color: #ab000e;
-	color: #fff;
-	padding: 1px;
-	font-size: 80%;
-	margin-left: 5px;
-}
-</style>
-</head> 
+	<style type="text/css">
+		input.error {
+			background-color: #fcc;
+		}
+
+		p.error {
+			color: #f00;
+			margin-top: 5px;
+		}
+
+		.require {
+			background-color: #ab000e;
+			color: #fff;
+			padding: 1px;
+			font-size: 80%;
+			margin-left: 5px;
+		}
+	</style>
+</head>
+
 <body>
 
-<header>
-<div class="inner">
-<h1><span>append, parent, remove, addClass, removeClass</span>フォームの入力チェックをする</h1>
-</div>
-<!-- header --></header>
+	<header>
+		<div class="inner">
+			<h1><span>append, parent, remove, addClass, removeClass</span>フォームの入力チェックをする</h1>
+		</div>
+		<!-- header -->
+	</header>
 
-<div id="contents">
-<div class="inner">
+	<div class="contents">
+		<div class="inner">
 
-<form action="" method="post">
-<dl>
-<dt>お名前<span class="require">必須</span></dt>
-<dd><input name="myname" type="text" size="35"></dd>
-<dt>性別<span class="require">必須</span></dt>
-<dd><label><input type="radio" name="gender" value="男性">男性</label> <label><input type="radio" name="gender" value="女性">女性</label></dd>
-<dt>年齢</dt>
-<dd><input type="text" name="age" size="10"></dd>
-</dl>
-</form>
+			<!-- <form action="" method="POST">
+				<dl>
+					<dt>お名前<span class="require">必須</span></dt>
+					<dd><input name="myname" type="text" size="35"></dd>
+					<dt>性別<span class="require">必須</span></dt>
+					<dd><label><input type="radio" name="gender" value="男性">男性</label><label><input type="radio" name="gender" value="女性">女性</label></dd>
+					<dt>年齢</dt>
+					<dd><input type="text" name="age" size="10"></dd>
+				</dl>
+			</form> -->
 
-</div>
-</div>
-<!-- inner --></div>
-<!-- contents --></div>
 
-<footer>
-<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
-<!-- footer --></footer>
 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript">
-// お名前
-$('input[name=myname]')
-	.bind('blur', function() {
-		if ($(this).val() == '') {
-			$(this).addClass('error').parent().append('<p class="error">※この項目は必ずご記入ください</p>');
-		}
-	})
-	.bind('focus', function() {
-		if ($(this).next() !== false) {
-			$(this).removeClass('error').next().remove();
-		}
-	});
+			<div id="contents">
+				<div class="inner">
 
-// 性別
-$('input[name=gender]').parents('dd').append('<p class="error">※この項目は必ずお選びください</p>').end()
-	.bind('change', function() {
-		if ($('input[name=gender]:checked').val() != '') {
-			$(this).parents('dd').find('.error').remove();
-		}
-	});
+					<form action="" method="post">
+						<dl>
+							<dt>お名前<span class="require">必須</span></dt>
+							<dd><input name="myname" type="text" size="35"></dd>
+							<dt>性別<span class="require">必須</span></dt>
+							<dd><label><input type="radio" name="gender" value="男性">男性</label><label><input type="radio" name="gender" value="女性">女性</label></dd>
+							<dt>年齢</dt>
+							<dd><input type="text" name="age" size="10"></dd>
+						</dl>
+					</form>
 
-// 年齢
-$('input[name=age]')
-	.bind('blur', function() {
-		$(this).parent().find('.error').remove();
-		if (isNaN($(this).val())) {
-			$(this).addClass('error').parent().append('<p class="error">※この項目は数値でご記入ください</p>');
-		}
-	})
-	.bind('focus', function() {
-		if ($(this).next() !== false) {
-			$(this).removeClass('error').next().remove();
-		}
-	});
-</script>
+
+					<!-- inner -->
+				</div>
+				<!-- contents -->
+			</div>
+
+			<footer>
+				<small><img src="../../_shared/img/footer_copy.png" width="147" height="14" alt="（C）H2O Space. Mynavi"></small>
+				<!-- footer -->
+			</footer>
+
+			<script type="text/javascript" src="js/jquery.js"></script>
+			<script type="text/javascript">
+				console.log($('input[name=myname]').val());
+
+
+
+
+
+		// $('input[name=myname]')
+		// 	.bind('blur', function () {
+		// 		if ($(this).val() == '') {
+		// 			$(this).addClass('error').parent().append('<p class="error">※この項目は必ずご記入ください</p>');
+		// 		}
+		// 	})
+		// 	.bind('focus', function () {
+		// 		if ($(this).next() !== false) {
+		// 			$(this).removeClass('error').next().remove();
+		// 		}
+		// 	});
+
+		// // 性別
+		// $('input[name=gender]').parents('dd').append('<p class="error">※この項目は必ずお選びください</p>').end()
+		// 	.bind('change', function () {
+		// 		if ($('input[name=gender]:checked').val() != '') {
+		// 			$(this).parents('dd').find('.error').remove();
+		// 		}
+		// 	});
+
+		// // 年齢
+		// $('input[name=age]')
+		// 	.bind('blur', function () {
+		// 		$(this).parent().find('.error').remove();
+		// 		if (isNaN($(this).val())) {
+		// 			$(this).addClass('error').parent().append('<p class="error">※この項目は数値でご記入ください</p>');
+		// 		}
+		// 	})
+		// 	.bind('focus', function () {
+		// 		if ($(this).next() !== false) {
+		// 			$(this).removeClass('error').next().remove();
+		// 		}
+		// 	});
+			</script>
 </body>
+
 </html>

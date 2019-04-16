@@ -1,3 +1,33 @@
+// app.jsから、snap.jsを読み込む
+// $('#script').before(function () {
+//     return $('<script>', {
+//         src: '../../../src/Snap.js-develop/snap.js'
+//     });
+// });
+
+// snapper.js
+var snapper = new snapper({
+    element: document.getElementById('content'),
+    dragger: document.getElementById('open')
+});
+
+//フリック・スワイプ・ドラッグ入力のほか、指定した要素のクリックでもめにゅーを開閉するための設定
+var addEvent = function addEvent(element, eventName, func) {
+    if (element.addEventListener) {
+        return element.addEventListener(eventName, func, false);
+    } else if (elemenet.attachEvent) {
+        return element.attachEvent("on" + eventName, func);
+    }
+}
+
+// 指定した要素をクリックするとメニューが開く
+addEvent(document.getElementById('open'), 'click', function () {
+    snapper.open('right');
+})
+
+
+
+
 $('#input').click(function () {
     var str = $('#str').val();
     $('#output').html("わたしは" + str + "です");

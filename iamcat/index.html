@@ -30,18 +30,24 @@
             <li>Movie</li>
             <li>Shop</li>
             <li>Book</li>
-            <li>Concept</li>
+            <li>Concept
+                <!-- スワイプ対応のメニュードロワー -->
+                <!-- https://on-ze.com/archives/5345 -->
+                <div class="snap-content" id="content">
+                    <div id="open"></div>
+                    <!-- コンテンツ -->
+                </div>
+            </li>
         </ul>
     </header>
-    <!-- <header class="header header_2">
-        <h1 class="title_h1 text_1">吾輩は猫である。</h1>
-        <ul class="menulist title_h2">
-            <li>Movie</li>
-            <li>Shop</li>
-            <li>Book</li>
-            <li>Concept</li>
-        </ul>
-    </header> -->
+
+
+
+
+    <div class="snap-drawers" id="snap">
+        <!-- メニューを記述 -->
+    </div>
+
 
     <div class="container">
         <!-- item0 サイドメニュー -->
@@ -138,7 +144,8 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script id="script" src="app.js" type="text/javascript"></script>
+    <script src="../../../src/Snap.js-develop/snap.js" type="text/javascript"></script>
 </body>
 
 </html>

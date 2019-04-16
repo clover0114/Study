@@ -1,257 +1,259 @@
- /* normalize.css */
- @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
- @import "reset.css";
+/* normalize.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+@import "reset.css";
+/* snap css (for menu js) */
+@import "../../../src/Snap.js-develop/snap.css";
 
- /* google fonts */
- @import url('https://fonts.googleapis.com/css?family=Righteous');
- @import url('https://fonts.googleapis.com/css?family=Righteous|Satisfy');
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Righteous|Satisfy');
 
- html {
-     width: 100vw;
-     /* font-size: 62.5%; */
-     font-size: calc(100vw/100);
-     background-color: rgb(190, 151, 151);
- }
+html {
+    width: 100vw;
+    /* font-size: 62.5%; */
+    font-size: calc(100vw/100);
+    background-color: rgb(190, 151, 151);
+}
 
- body {
-     height: auto;
-     width: inherit;
-     margin: 0 auto;
-     text-align: center;
-     font-family: "Sawarabi Mincho";
-     background: -webkit-linear-gradient(180deg, rgb(116, 95, 76), rgb(167, 106, 36), rgb(95, 86, 8));
+body {
+    height: auto;
+    width: inherit;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Sawarabi Mincho";
+    background: -webkit-linear-gradient(180deg, rgb(116, 95, 76), rgb(167, 106, 36), rgb(95, 86, 8));
 
- }
+}
 
- .header {
-     width: inherit;
-     height: 2.5rem;
-     background: linear-gradient(180deg, rgb(222, 228, 220), rgb(216, 216, 189));
-     box-shadow: 0px 1px 2px rgb(140, 123, 145);
-     position: fixed;
-     display: flex;
-     /* これでロゴとメニューリストを両はしに寄せてる */
-     justify-content: space-between;
-     flex-flow: row wrap;
-     z-index: 100;
-     /* border-bottom-left-radius: 1000px 200px;
+.header {
+    width: inherit;
+    height: 2.5rem;
+    background: linear-gradient(180deg, rgb(222, 228, 220), rgb(216, 216, 189));
+    box-shadow: 0px 1px 2px rgb(140, 123, 145);
+    position: fixed;
+    display: flex;
+    /* これでロゴとメニューリストを両はしに寄せてる */
+    justify-content: space-between;
+    flex-flow: row wrap;
+    z-index: 100;
+    /* border-bottom-left-radius: 1000px 200px;
         margin-left: -100px;
         margin-right: -100px;
         padding-left: 100px;
         padding-right: 100px;  */
-     transition: 0.8s;
- }
+    transition: 0.8s;
+}
 
- .header.header_2 {
-     margin-top: 3.5rem;
- }
+.header.header_2 {
+    margin-top: 3.5rem;
+}
 
- .transform {
-     height: 1.75rem;
-     opacity: 0;
- }
+.transform {
+    height: 1.75rem;
+    opacity: 0;
+}
 
- .menulist {
-     display: flex;
-     flex-direction: row-reverse;
- }
+.menulist {
+    display: flex;
+    flex-direction: row-reverse;
+}
 
- .menulist li {
-     padding: 0rem 1.1rem;
- }
+.menulist li {
+    padding: 0rem 1.1rem;
+}
 
- /* .header_menu {
+/* .header_menu {
      display: flex;
      flex-flow: row wrap;
  } */
 
- .container {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 1fr;
-     grid-template-areas:
-         "areaA areaB areaC";
- }
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "areaA areaB areaC";
+}
 
- /* item1 構造の定義 */
- .item1 {
-     /* 位置 */
-     grid-area: areaB;
-     /* グリッドの配置にライン、スパン、または何も（自動）を使用して、グリッド内のグリッド項目のサイズと位置を決定します。 'grid-row-start'、 'grid-column-start'、 'grid-row-end'、および 'grid-column-end'の省略形。 */
+/* item1 構造の定義 */
+.item1 {
+    /* 位置 */
+    grid-area: areaB;
+    /* グリッドの配置にライン、スパン、または何も（自動）を使用して、グリッド内のグリッド項目のサイズと位置を決定します。 'grid-row-start'、 'grid-column-start'、 'grid-row-end'、および 'grid-column-end'の省略形。 */
 
-     padding: 1rem 15px;
-     margin: 5rem auto;
-     /* 形 */
-     width: 50vw;
-     height: fit-content;
-     border-radius: 0.7rem;
- }
+    padding: 1rem 15px;
+    margin: 5rem auto;
+    /* 形 */
+    width: 50vw;
+    height: fit-content;
+    border-radius: 0.7rem;
+}
 
- /* item1 スタイリング */
- .item1_style {
-     background: linear-gradient(180deg, #fff, rgb(216, 216, 196));
-     /* box-shadow: 10px 3px 6px rgb(112, 99, 57); */
- }
+/* item1 スタイリング */
+.item1_style {
+    background: linear-gradient(180deg, #fff, rgb(216, 216, 196));
+    /* box-shadow: 10px 3px 6px rgb(112, 99, 57); */
+}
 
- /* カードの構造定義 */
- .mainbox {
-     /* 位置 */
-     margin: 0.5rem auto;
-     /* 形 */
-     width: 65%;
-     height: 10rem;
-     /* 構造の定義 */
-     box-sizing: border-box;
- }
+/* カードの構造定義 */
+.mainbox {
+    /* 位置 */
+    margin: 0.5rem auto;
+    /* 形 */
+    width: 65%;
+    height: 10rem;
+    /* 構造の定義 */
+    box-sizing: border-box;
+}
 
- /* main1 構造の定義 */
- .main_1 {
-     /* 構造方法の定義 */
-     display: flex;
-     flex-direction: column;
-     margin: 0 auto;
-     word-break: break-all;
- }
+/* main1 構造の定義 */
+.main_1 {
+    /* 構造方法の定義 */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    word-break: break-all;
+}
 
- /* main1 構造 */
- .main1_const {
-     padding: 1rem;
-     width: 96.5%;
-     height: fit-content;
- }
+/* main1 構造 */
+.main1_const {
+    padding: 1rem;
+    width: 96.5%;
+    height: fit-content;
+}
 
- /* main1 スタイリング */
- .main1_style {
-     background: linear-gradient(125deg, rgb(191, 197, 105) 0%, rgb(223, 207, 120) 50%, rgb(173, 187, 123) 100%);
-     border-radius: 0.7rem;
-     opacity: .8;
- }
+/* main1 スタイリング */
+.main1_style {
+    background: linear-gradient(125deg, rgb(191, 197, 105) 0%, rgb(223, 207, 120) 50%, rgb(173, 187, 123) 100%);
+    border-radius: 0.7rem;
+    opacity: .8;
+}
 
- /* main2 構造の定義 */
- .main_2 {
-     /* 構造の定義 */
-     display: flex;
-     flex-flow: row wrap;
-     margin: 0 auto;
- }
+/* main2 構造の定義 */
+.main_2 {
+    /* 構造の定義 */
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
 
- /* main2 構造 */
- .main2_const {
-     /* 位置 */
+/* main2 構造 */
+.main2_const {
+    /* 位置 */
 
-     /* margin: 0.3rem auto; */
-     /* 形 */
-     width: 30%;
-     height: 10rem;
- }
+    /* margin: 0.3rem auto; */
+    /* 形 */
+    width: 30%;
+    height: 10rem;
+}
 
- /* main2 スタイリング */
- .main2_style {
-     /* スタイリング */
-     background-color: rgb(196, 189, 149);
-     border-radius: 1rem;
-     opacity: .8;
- }
+/* main2 スタイリング */
+.main2_style {
+    /* スタイリング */
+    background-color: rgb(196, 189, 149);
+    border-radius: 1rem;
+    opacity: .8;
+}
 
- .main_1 div .main_2 .main2_style {
-     background-color: rgb(255, 255, 255);
-     opacity: 1;
- }
+.main_1 div .main_2 .main2_style {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
 
- .item0 {
-     grid-area: areaA;
- }
+.item0 {
+    grid-area: areaA;
+}
 
- .item2 {
-     grid-area: areaC;
- }
+.item2 {
+    grid-area: areaC;
+}
 
- .empty {
-     padding: 1rem 0.7rem;
-     height: fit-content;
- }
+.empty {
+    padding: 1rem 0.7rem;
+    height: fit-content;
+}
 
- .menu1_const {
-     padding: 1rem 15px;
-     margin: 5rem auto;
-     /* 形 */
-     width: 80%;
-     height: fit-content;
- }
+.menu1_const {
+    padding: 1rem 15px;
+    margin: 5rem auto;
+    /* 形 */
+    width: 80%;
+    height: fit-content;
+}
 
- .menu_item {
-     background: #fff;
- }
+.menu_item {
+    background: #fff;
+}
 
- .menu2_const {
-     padding: 1rem 15px;
-     margin: 5rem auto;
-     margin-bottom: 1rem;
-     /* 形 */
-     width: 80%;
-     height: 30rem;
- }
+.menu2_const {
+    padding: 1rem 15px;
+    margin: 5rem auto;
+    margin-bottom: 1rem;
+    /* 形 */
+    width: 80%;
+    height: 30rem;
+}
 
- /* ここはnth-childではdivをうまく選択できないため */
- .item2 div:nth-of-type(2) {
-     padding: 1rem 15px;
-     margin: 1rem auto;
-     height: 50rem;
- }
+/* ここはnth-childではdivをうまく選択できないため */
+.item2 div:nth-of-type(2) {
+    padding: 1rem 15px;
+    margin: 1rem auto;
+    height: 50rem;
+}
 
- /* テキスト */
- .title_h1 {
-     padding: 0.7rem;
-     padding-left: 4.2rem;
-     font-weight: bold;
- }
+/* テキスト */
+.title_h1 {
+    padding: 0.7rem;
+    padding-left: 4.2rem;
+    font-weight: bold;
+}
 
- .title_h2 {
-     padding: 0.7rem;
-     padding-left: 4.2rem;
-     font-weight: lighter;
- }
+.title_h2 {
+    padding: 0.7rem;
+    padding-left: 4.2rem;
+    font-weight: lighter;
+}
 
- .text_1 {
-     /* 元々の文字色をなしに */
-     -webkit-text-fill-color: transparent;
-     /* 表示できない環境用の色 */
-     color: rgb(116, 83, 34);
-     /* 背景を指定 */
-     background: -webkit-linear-gradient(90deg, rgb(116, 95, 76), rgb(167, 106, 36), rgb(95, 86, 8));
-     /* 文字サイズに背景を切り取って指定 */
-     -webkit-background-clip: text;
-     background-clip: text;
- }
+.text_1 {
+    /* 元々の文字色をなしに */
+    -webkit-text-fill-color: transparent;
+    /* 表示できない環境用の色 */
+    color: rgb(116, 83, 34);
+    /* 背景を指定 */
+    background: -webkit-linear-gradient(90deg, rgb(116, 95, 76), rgb(167, 106, 36), rgb(95, 86, 8));
+    /* 文字サイズに背景を切り取って指定 */
+    -webkit-background-clip: text;
+    background-clip: text;
+}
 
 
- .subtitle {
-     font-size: 3rem;
-     padding: 2rem;
- }
+.subtitle {
+    font-size: 3rem;
+    padding: 2rem;
+}
 
- .firstlet:first-letter {
-     font-size: 3em;
- }
+.firstlet:first-letter {
+    font-size: 3em;
+}
 
- /* img */
+/* img */
 
- .cat_img {
-     width: 20rem;
-     height: auto;
-     border-radius: 10px;
-     margin-bottom: 2rem;
-     box-shadow: 0rem 1rem 1rem #ddd;
- }
+.cat_img {
+    width: 20rem;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0rem 1rem 1rem #ddd;
+}
 
- #largeImg {
-     display: none;
- }
+#largeImg {
+    display: none;
+}
 
- #cover {
-     background: rgba(0, 0, 0, .5);
-     display: none;
-     position: absolute;
-     left: 0;
-     top: 0;
- }
+#cover {
+    background: rgba(0, 0, 0, .5);
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
