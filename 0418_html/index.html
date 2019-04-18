@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0418_単位の実験</title>
+    <style>
+        html {
+            font-size: 40px;
+        }
+
+        .em_2em {
+            font-size: 2em;
+        }
+
+        .em_2em {}
+
+        .parent_fontsize20 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- emは親要素のfont-sizeが適用されるはずなので、この場合はルートの16px？ -->
+    <!-- そのとおり！ -->
+    <p class="em">吾輩は猫である</p>
+    <!-- emは親要素のfont-sizeが適用されるはずなので、この場合はルートの２倍の32px？ -->
+    <!-- そのとおり！ -->
+    <p class="em_2em">吾輩は猫である</p>
+
+
+    <div class="parent_fontsize20">
+        <!-- この場合は、親のfont-sizeを20pxとしているので、その２倍のサイズが適用され、font-sizeは40px？ -->
+        <!-- そのとおり！ -->
+        <p class="em_2em">吾輩は猫である</p>
+    </div>
+
+    <!-- ルートを変更すると全てのfont-sizeを変更できる？ -->
+    <!-- ややその通り！ -->
+    <!-- 親にfont-sizeを指定している物に関しては、親のサイズを元に計算するのでサイズが変更されなかった -->
+
+
+</body>
+
+</html>

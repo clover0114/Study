@@ -1,0 +1,89 @@
+/* @media all () {}
+
+@media print () {}
+
+@media screen () {}
+
+@media speech () {}
+
+*/
+/* デバイスピクセル比 */
+/* 解像度の高いデバイス、例えばretinaディスプレイではDPR(device pixel ratio)値が2、
+つまりcssピクセルの2倍のピクセルを持っているので、ビットマップイメージなどは以下のようにする */
+/* @media (resolution: 2dppx) { */
+/* 高解像度用の画像 */
+/* background-image: url(''); */
+/* この画像が適用されている要素よりも、画像が大きくならないようにする */
+/* background-size: 100% 100%;
+} */
+
+
+/* ブラウザのアスペクト比 */
+/* @media (aspect-ratio: 16/9) {} */
+
+/* デバイスアスペクト比 */
+/* 非推奨 */
+/* @media (device-aspect-ratio: 16/9) {} */
+
+html {
+    font-size: 62.5%;
+    font-size: calc(100vw/144);
+}
+
+/* ol {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+li {
+    font-size: 1.5rem;
+    overflow: hidden;
+    float: left;
+    list-style: none;
+    padding: 1rem;
+    margin: 0.2rem;
+    border-radius: 1rem;
+    width: 20.3rem;
+    border: 0.1rem solid black;
+    text-align: center;
+} */
+
+ol::after {
+    content: '';
+    display: block;
+    padding: 3rem;
+}
+
+@media screen and (min-width: 800px) {
+    float: none;
+}
+
+.example {
+    width: 50vw;
+    height: 30px;
+    /* word-break: break-word; */
+    overflow: hidden;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    background: skyblue;
+}
+
+
+a[rel='friends'] {
+    color: red;
+}
+
+a[rel~='friends'] {
+    color: red;
+}
+
+/* 言語コードに対しては少し違う */
+a[lang|='es'] {
+    color: blue;
+}
+
+/* @media screen and (min-width: 800px) {
+    ol {
+        float: none;
+    }
+} */
