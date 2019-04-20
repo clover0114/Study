@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #section-1 {
+            background-color: aquamarine;
+        }
+
+        #section-2 {
+            background-color: goldenrod;
+        }
+    </style>
+    <title>js_dom</title>
+</head>
+
+
+
+<body>
+
+    <button id="btn" onclick="callParent();">押したら親ノードの名前を表示</button>
+    <!-- 親ノード -->
+    <article class="parent">
+        <!-- 基準ノード -->
+        <section id="section-1">
+            <!-- 子ノード -->
+            <h2>セクション1</h2>
+            <p>子ノード1</p>
+            <p>子ノード2</p>
+            <p>子ノード3</p>
+        </section>
+
+        <!-- 兄弟ノード -->
+        <section id="section-2">
+            <!-- 子ノード -->
+            <h2>セクション2</h2>
+            <p>子ノード1</p>
+            <p>子ノード2</p>
+            <p>子ノード3</p>
+        </section>
+    </article>
+
+    <script>
+        // section-2の文字を操作する
+        document.getElementById('section-2').style.color = 'red';
+
+        // 子ノードを取得して操作する
+        // elementNodeReference = 基準ノードを指している
+        // childNodes = 配列で、子ノードを指している
+
+        // 基準ノードを取得
+        var baseElement = document.getElementById('section-2');
+        var section2node2 = baseElement.childNodes[5];
+        section2node2.innerHTML = '内容を書き換えました';
+
+        // 親ノードを取得して、操作する
+        var baseElement = document.getElementById('section-2');
+        // parentElementは、クラスで定義するのではなく、 子ノード.parentNodeで取得する
+        var parentNode = baseElement.parentNode;
+        parentNode.removeChild(baseElement);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
